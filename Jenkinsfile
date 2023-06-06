@@ -16,7 +16,7 @@ pipeline {
       parallel {
         stage('Linux Test') {
           steps {
-            sh 'sh run_linux_tests.sh'
+            sh 'bat run_linux_tests.sh'
             echo 'Run Linux tests'
           }
         }
