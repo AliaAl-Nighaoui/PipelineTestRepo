@@ -16,7 +16,8 @@ pipeline {
       parallel {
         stage('Linux Test') {
           steps {
-            sh 'sh run_build_script.sh'
+            sh 'sh run_linux_tests.sh'
+            echo 'Run Linux tests'
           }
         }
 
